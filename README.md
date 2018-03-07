@@ -10,6 +10,6 @@ The channel will help us to learn about the new technologies on front-end, back-
 
 # License
 
-## Logo
+**Logo**
 
 Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/4Mtugn
