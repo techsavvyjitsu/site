@@ -1,13 +1,22 @@
+import './footer.less';
 import React, { Component } from 'react';
+import Social from '../social';
 
 class Footer extends Component {
   render() {
     return (  
-      <footer class="footer footer-component">
-        <div class="container">
-          <div class="content has-text-centered">
+      <footer className="footer footer-component">
+        <div className="container">
+          <p className="has-text-centered">
+            <strong>Follow us on</strong>
+            <Social showBrandName={false} />
+          </p>
+          <hr />
+          <div className="content has-text-centered">
             <p>
-              <strong>Tech Savvy Jitsu</strong> is developed and maintained by <a rel="noopener noreferrer" target="_blank" href="https://github.com/hegdeashwin">Ashwin Hegde</a>.
+              <strong>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ">Tech Savvy Jitsu</a>
+              </strong> is developed and maintained with <i className="fas fa-heart fa-lg" /> by <a rel="noopener noreferrer" target="_blank" href="https://github.com/hegdeashwin">Ashwin Hegde</a>.
             </p>
             <p>
               The source code is licensed
