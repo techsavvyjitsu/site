@@ -1,25 +1,55 @@
 import './social.less';
+import Socials from './socialData';
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
 class Social extends Component {
   render() {
     const {
-      showBrandName
+      showBrandName,
+      isButtonStyle
     } = this.props;
 
-    return (  
-      <div class="field is-grouped social-component">
-        <p className="control">
-          <a className="twitter button" rel="noopener noreferrer" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://twitter.com/techsavvyjitsu" target="_blank" href="https://twitter.com/techsavvyjitsu">
-            <i className="fab fa-twitter fa-lg"></i> { showBrandName && <span>Follow us on Twitter</span> }
-          </a>
-        </p>
-        <p className="control">
-          <a className="youtube button" rel="noopener noreferrer" data-social-network="YouTube" data-social-action="youtube" data-social-target="https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ" target="_blank" href="https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ">
-            <i className="fab fa-youtube fa-lg"></i> { showBrandName && <span>Subscribe to our YouTube channel</span> }
-          </a>
-        </p>
-      </div>
+    return (
+      <p className="field is-grouped social-component">
+        {
+          Socials.reference.map((social, index) => {
+
+            let linkStyle = {
+              'button': (isButtonStyle) ? true : false
+            };
+
+            let paraIconStyle = {
+              'control': true,
+              'icon-space':  (isButtonStyle) ? false : true
+            };
+
+            let iconStyle = {
+              'fab': true,
+              'fa-lg': true
+            };
+            
+            linkStyle[social.brand] = true;
+            linkStyle = classnames(linkStyle);
+            
+            paraIconStyle = classnames(paraIconStyle);
+            
+            iconStyle[`fa-${social.brand}`] = true;
+            iconStyle = classnames(iconStyle);
+
+            return (
+              <span className={paraIconStyle} key={index}>
+                <a className={linkStyle} rel="noopener noreferrer" 
+                  data-social-network={social.brand} data-social-action={social.brand} 
+                  data-social-target={social.linkTo} 
+                  target="_blank" href={social.linkTo} title={social.title}>
+                  <i className={iconStyle} /> { showBrandName && <span>{social.title}</span> }
+                </a>
+              </span>
+            )
+          })
+        }
+      </p>
     );
   }
 }
