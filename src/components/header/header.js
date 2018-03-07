@@ -10,7 +10,7 @@ class Header extends Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="https://techsavvyjitsu.github.io/site">
-              <img src={LOGO} alt="Tech Savvy Jitsu Logo" />Tech Savvy Jitsu
+              <img src={LOGO} alt="Tech Savvy Jitsu Logo" /> <strong>Tech Savvy Jitsu</strong>
             </a>
             <div className="navbar-burger burger" data-target="navMenuColordark">
               <span></span>
@@ -22,7 +22,7 @@ class Header extends Component {
           <div id="navMenuColordark" className="navbar-menu">
             <div className="navbar-end">
               <div className="navbar-item">
-                <Social showBrandName={true} />
+                <Social isButtonStyle={true} showBrandName={true} />
               </div>
             </div>
           </div>
