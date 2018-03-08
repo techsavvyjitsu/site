@@ -11,7 +11,7 @@ class Footer extends Component {
             <div>
               <strong>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ">Tech Savvy Jitsu</a>
-              </strong> is developed and maintained with <i className="fas fa-heart fa-lg" /> by <a href="profile">Ashwin Hegde</a>.
+              </strong> is developed and maintained with <i className="fas fa-heart fa-lg" /> by <a href="#/profile">Ashwin Hegde</a>.
             </div>
             <div>
               The source code is licensed
