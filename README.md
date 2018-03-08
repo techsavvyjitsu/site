@@ -2,7 +2,7 @@
 
 The channel will help us to learn about the new technologies on front-end, back-end and devops.
 
-1. Visit our [Website](https://techsavvyjitsu.github.io/site)
+1. Visit our [Website](https://heuristic-jepsen-714902.netlify.com/#/)
 
 2. Like and Subscribe to our [YouTube Channel](https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ)
 
