@@ -1,8 +1,15 @@
-import React from 'react';
+// Styles
+import './styles/common.less';
+
+// Package
+// import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+// Components
+import Routes from './router/routes';
+
+// Scripts
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(Routes, document.getElementById('root'));
 registerServiceWorker();
