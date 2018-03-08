@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  BrowserRouter as Router,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -15,7 +15,7 @@ import Error from '../pages/error';
 
 // Construct application routes
 const Routes = (
-  <Router>
+  <HashRouter>
     <App>
       <Switch>
         <Route exact path = "/" component = {Home} />
@@ -24,7 +24,7 @@ const Routes = (
         <Route component={Error} />
       </Switch>
     </App>
-  </Router>
+  </HashRouter>
 );
 
 export default Routes;
