@@ -3,23 +3,23 @@ import React, { Component } from 'react';
 class Hero extends Component {
   render() {
     return (  
-      <section class="hero is-info is-large">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <p class="title">
+      <section className="hero is-info is-large">
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <p className="title">
               Title
             </p>
-            <p class="subtitle">
+            <p className="subtitle">
               Subtitle
             </p>
           </div>
         </div>
 
-        <div class="hero-foot">
-          <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
+        <div className="hero-foot">
+          <nav className="tabs is-boxed is-fullwidth">
+            <div className="container">
               <ul>
-                <li class="is-active">
+                <li className="is-active">
                   <a>Overview</a>
                 </li>
                 <li>
